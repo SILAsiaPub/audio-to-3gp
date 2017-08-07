@@ -3,4 +3,18 @@ Simple interface for FFMPEG converter
 
 This provides a minimal installer and GUI to create 3GP files from any audio source. I has a simple parameter file named project.txt that is visible and editable via the GUI. The GUI opens the file in Notepad.
 
+```
+inpath=
+outpath=
+infile_ext=.mp3
+[possible encoders either libvo_amrwbenc or libopencore_amrnb]
+audio_encoder=libvo_amrwbenc
+[Audio_sample either 16000 for amrwb or 8000 for amrnb]
+audio_sample_rate=16000
+[target_bitrate use for amrnb of 4.75k, 5.15k, 5.90k, 6.70k, 7.40k, 7.95k, 10.20k, 12.20k]
+[target_bitrate use for amrwb of 6.60k, 8.85k, 12.65k, 14.25k, 15.85k, 18.25k, 19.85k, 23.05k, 23.85k]
+target_bitrate=8.85k
+ffmpeg=C:\programs\ffmpeg\bin\ffmpeg.exe
+```
+
 For more information see: [Transformation Information](transform-info.md)
