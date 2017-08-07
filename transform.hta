@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html xmlns:HTA="HyperTextApplication">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <!--   Create GUI for bat file.      -->
+      <title>Converts MP3 files 3GP</title>
+      <HTA:application applicationName="transform app" singleinstance="yes" Icon="t.ico"></HTA:application><style type="text/css">
+  BODY {
+    background:rgb(240,248,255);
+    margin: 10px 10px 10px 10px;
+    font: 11px Verdana;  
+  }
+  .widebutton {width:400px}
+  .inibutton {width:200px; margin:10px 0 10px 0}
+  .label {padding-top:10pt}
+  .sample {width:154px;height:123px;}
+  .floatright {float:right}
+ </style><script language="vbscript">Option Explicit
+
+         <!--define variables-->
+Dim strPath, dquote, WScript, shell, objShell, cmdline, projIni, labelIni, strUserProfile 
+
+         <!--set some values-->
+projIni = "project.txt"
+labelIni = "label.txt"
+Set objShell = CreateObject("Wscript.Shell")
+dquote = chr(34)
+strUserProfile = objShell.ExpandEnvironmentStrings( "%userprofile%" )
+
+Sub RunScript()
+    'writeProjIni projIni,"variables",styleout
+    cmdline = "cmd.exe /c run.cmd"
+    objShell.run(cmdline)
+End Sub
+
+Sub editProject()
+    cmdline = "notepad project.txt"
+    objShell.run(cmdline)
+End Sub
+</script><SCRIPT language="JavaScript">window.resizeTo(800,800);</SCRIPT></head>
+   <body>
+      <div class="floatright"><button onclick="editProject" name="LoadValues" class="inibutton">Edit project</button></div>
+      <iframe src="project.txt" width="750" height="200" frameborder="2"></iframe>
+      <button onclick="RunScript()" class="inibutton" id="t1">Run transformation</button>
+      <iframe src="transform-info.html" width="750" height="400" frameborder="2"></iframe>
+      </body>
+</html>
