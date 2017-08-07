@@ -27,13 +27,13 @@ The default is amrwb sample rate 16000 and 8.86k bit rate.
 
 | Notes | output size | % of source | Encoding |
 | ----------- | ----------- | ----------- | -------- |
-| source file| 2918KB       | 100%         | mp3 22.05kHz 64kbps|
-| still big      | 853KB       | 29%         | mp3 11.025kHz 16kbps|
-| usable      | 492KB       | 17%         | mp3 11.025kHz 8kbps|
-| ok but big | 590KB | 20%| 3gp amrnb 8kHz 12.2kbps|
-| only if desperate      | 246KB | 8%| 3gp amrnb 8kHz 4.75kbps|
-| acceptable?      | 445KB | 15%| 3gp amrwb 16kHz 12.2kbps|
-| don't like      | 337KB | 12%| 3gp amrwb 16kHz 6.6kbps|
+| source file| 2918KB       | 100%         | mp3 22.05kHz 64Kbps|
+| still big      | 853KB       | 29%         | mp3 11.025kHz 16Kbps|
+| usable      | 492KB       | 17%         | mp3 11.025kHz 8Kbps|
+| ok but big | 590KB | 20%| 3gp amrnb 8kHz 12.2Kbps|
+| only if desperate      | 246KB | 8%| 3gp amrnb 8kHz 4.75Kbps|
+| acceptable?      | 445KB | 15%| 3gp amrwb 16kHz 12.2Kbps|
+| don't like      | 337KB | 12%| 3gp amrwb 16kHz 6.6Kbps|
 
 ### Encoders
 
