@@ -4,10 +4,10 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING .ISS SCRIPT FILES!
 
 [Setup]
-OutputBaseFilename=mp3-3gp-installer
-AppName=mp3-3gp for SAB
-AppVersion=0.2
-DefaultDirName=C:\programs\mp3-3gp
+OutputBaseFilename=audio-to-3gp-installer
+AppName=audio-to-3gp for SAB
+AppVersion=0.3
+DefaultDirName=C:\programs\audio-to-3gp
 DisableDirPage=true
 DefaultGroupName=Publishing
 UninstallDisplayIcon={app}\u.ico
