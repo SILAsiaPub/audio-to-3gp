@@ -77,11 +77,11 @@ The default is amrwb sample rate 16000 and 8.86k bit rate.
 
 ----------------
 |**Settings**|**Bitrate**|**File size  per second**|**File size  per minute**|**File size  per hour**
-|--------|---------|-----------|--------|---------|---------
-| 16 bit,| 44.1 KHz| 705.6 Kbps| 88.2 KB| 5.292 MB| 317.52 MB
-| 16 bit,| 48 KHz| 768 Kbps| 96 KB| 5.750 MB| 345.60 MB
-| 24 bit,| 48KHz| 1,152 Kbps| 144 KB| 8.640 MB| 518.40 MB
-| 24 bit,| 96KHz| 2,304 Kbps| 288 KB| 17.280 MB| 1.0368 GB
+|--------|---------|-----------|--------|---------|
+| 16 bit, 44.1 KHz| 705.6 Kbps| 88.2 KB| 5.292 MB| 317.52 MB
+| 16 bit, 48 KHz| 768 Kbps| 96 KB| 5.750 MB| 345.60 MB
+| 24 bit, 48KHz| 1,152 Kbps| 144 KB| 8.640 MB| 518.40 MB
+| 24 bit, 96KHz| 2,304 Kbps| 288 KB| 17.280 MB| 1.0368 GB
 
 #### Stereo
 
