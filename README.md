@@ -16,5 +16,6 @@ audio_sample_rate=16000
 target_bitrate=8.85k
 ffmpeg=C:\programs\ffmpeg\bin\ffmpeg.exe
 ```
+The file needs to be edited to suit your needs.
 
 For more information see: [Transformation Information](transform-info.md)
