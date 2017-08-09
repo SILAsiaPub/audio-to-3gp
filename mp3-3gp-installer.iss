@@ -28,8 +28,8 @@ Source: "D:\All-SIL-Publishing\installer-tools\unzip.exe"; DestDir: "{tmp}"; Fla
 
 
 [Icons]
-Name: "{group}\mp3-3gp"; Filename: "{app}\transform.hta"; IconFilename: "{app}\t.ico"
-Name: "{group}\Uninstall mp3-3gp"; Filename: "{uninstallexe}" ; IconFilename: "{app}\u.ico"
+Name: "{group}\audio-to-3gp"; Filename: "{app}\transform.hta"; IconFilename: "{app}\t.ico"
+Name: "{group}\Uninstall audio-to-3gp"; Filename: "{uninstallexe}" ; IconFilename: "{app}\u.ico"
 
  [Run]
 Filename: "{tmp}\UNZIP.EXE"; Parameters: "{tmp}\ffmpeg.zip -d {app}\ffmpeg";  Check: FileDoesNotExist('C:\programs\ffmpeg\bin\ffmpeg.exe');

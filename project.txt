@@ -1,6 +1,8 @@
 inpath=
 outpath=
 infile_ext=.mp3
+cmd-debug=off
+ffmpeg-debug=off
 [possible encoders either libvo_amrwbenc or libopencore_amrnb]
 audio_encoder=libvo_amrwbenc
 [Audio_sample either 16000 for amrwb or 8000 for amrnb]
