@@ -11,3 +11,4 @@ audio_sample_rate=16000
 [target_bitrate use for amrwb of 6.60k, 8.85k, 12.65k, 14.25k, 15.85k, 18.25k, 19.85k, 23.05k, 23.85k]
 target_bitrate=8.85k
 ffmpeg=C:\programs\ffmpeg\bin\ffmpeg.exe
+
