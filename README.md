@@ -18,15 +18,23 @@ embedded PNG file that acts as the video source.
 ```
 inpath=
 outpath=
-infile_ext=.mp3
-[possible encoders either libvo_amrwbenc or libopencore_amrnb]
-audio_encoder=libvo_amrwbenc
-[Audio_sample either 16000 for amrwb or 8000 for amrnb]
-audio_sample_rate=16000
-[target_bitrate use for amrnb of 4.75k, 5.15k, 5.90k, 6.70k, 7.40k, 7.95k, 10.20k, 12.20k]
-[target_bitrate use for amrwb of 6.60k, 8.85k, 12.65k, 14.25k, 15.85k, 18.25k, 19.85k, 23.05k, 23.85k]
+[Input format: mp3 wav flac]
+input_format=mp3
+[Output format allowed: 3gp or mp3]
+output_format=3gp
+[target_bitrate use for AMR-wb of 6.60k, 8.85k, 12.65k, 14.25k, 15.85k, 18.25k, 19.85k, 23.05k, 23.85k]
 target_bitrate=8.85k
+[ffmpeg-strict default is "normal" but set to "unofficial" for other audio sample rates]
+ffmpeg-strict=normal
+[unofficial sample rates: 6600 8850 12650 14250 15850 18250 19850 23050 23850 ]
+audio_sample_rate=16000
+[Expert variables, that are normally not edited]
+audio_amrwb=on
+cmd-debug=off
+ffmpeg-debug=off
 ffmpeg=C:\programs\ffmpeg\bin\ffmpeg.exe
+[target_bitrate use for AMR-nb of 4.75k, 5.15k, 5.90k, 6.70k, 7.40k, 7.95k, 10.20k, 12.20k Must set audio_amrwb to off]
+
 ```
 
 The file needs to be edited to suit your needs.
