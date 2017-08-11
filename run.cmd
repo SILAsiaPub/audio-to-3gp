@@ -1,20 +1,25 @@
 @echo off
 :: Convert to 3gp
+:: version: 1.0 beta
 
 :main
 call :variableslist project.txt
 call :checks
 call :variables
 call :info
-for /F usebackq %%m IN (`dir /B "%inpath%\*%infile_ext%"`) DO call :countfiles
-for /F "usebackq delims=" %%m IN (`dir /B "%inpath%\*%infile_ext%"`) DO call :convert "%%m"
+for /F usebackq %%m IN (`dir /B %findmp3% %findwav% %findflac%`) DO call :countfiles
+for /F "usebackq delims=" %%m IN (`dir /B %findmp3% %findwav% %findflac%`) DO call :convert "%%m"
 @if '%errorscheck%' gtr '0' Echo Error count = %errorscheck% &pause
+if "%ffmpeg-debug%" == "on" (pause) else if "%cmd-debug%" == "on" (pause)
 goto :eof
 :variables
 set errorscheck=0
 set param1=-loglevel %ffmpeg_info% -y -i
 set audio_param=-ac 1 -ar %audio_sample_rate% -b:a %target_bitrate% -strict %ffmpeg_strict% -acodec %audio_encoder% 
-set video_param=-r 5 -b:v 24k -vf scale=128:96 -vcodec h263
+set video_param=-r 5 -b:v 12k -vf scale=128:96 -vcodec h263
+set findmp3="%inpath%\*.mp3"
+set findflac="%inpath%\*.flac"
+set findwav="%inpath%\*.wav" 
 goto :eof
 
 :info
@@ -29,10 +34,17 @@ goto :eof
 
 if not exist "%outpath%" md "%outpath%"
 if "%output_format%" == "3gp" (set output_format_name=video) else (set output_format_name=audio)
+if "%output_format%" == "mp3" (set audio_encoder=libmp3lame) else if "%audio_amrwb%" == "off" (set audio_encoder=libopencore_amrnb) else (set audio_encoder=libvo_amrwbenc)
+if "%audio_amrwb%" == "off" (set audio_sample_rate=8000) else if "%ffmpeg-strict%" == "normal" (set audio_sample_rate=16000) else (set audio_sample_rate=%audio_sample_rate%)
+if "%output_format%" == "mp3" (set audio_sample_rate=%audio_sample_rate%)
 if "%ffmpeg-debug%" == "off" (set ffmpeg_info=panic) else (set ffmpeg_info=info)
 if "%ffmpeg_strict%" == "" (set ffmpeg_strict=normal)
-if not exist "%inpath%\*%infile_ext%" echo Input %infile_ext% files not found! Check your inpath settings in project.txt. & pause & exit /b
-if not exist "%ffmpeg%" echo Ffmpeg.exe not found! Check where ffmpeg.exe is installed and correct the path in your project.txt. & pause & exit /b
+set typecount=3
+if not exist "%inpath%\*.mp3"  (set /A typecount=%typecount%-1)
+if not exist "%inpath%\*.wav" (set /A typecount=%typecount%-1)
+if not exist "%inpath%\*.flac" (set /A typecount=%typecount%-1)
+if "%typecount%" == "0" echo Input %infile_ext% files not found! Check your inpath settings in project.txt. & pause & exit
+if not exist "%ffmpeg%" echo Ffmpeg.exe not found! Check where ffmpeg.exe is installed and correct the path in your project.txt. & pause & exit 
 goto :eof
 
 :countfiles
