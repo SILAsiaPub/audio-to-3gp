@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<presets>
+   <AppBuilder3gp12.65k16000>
+      <label>3gp AMR-wb 16000Hz 12.65k mono Video H.263 128x96 </label>
+      <params>-r 5 -b:v 12k -vf scale=128:96 -vcodec h263 -ac 1 -ar 16000 -b:a 12.65k -strict normal -acodec libvo_amrwbenc</params>
+      <extension>3gp</extension>
+      <category>App Builder</category>
+   </AppBuilder3gp12.65k16000>
+   <AppBuilder3gp8.85k16000>
+      <label>3gp AMR-wb 16000Hz 8.85k mono Video H.263 128x96 </label>
+      <params>-r 5 -b:v 12k -vf scale=128:96 -vcodec h263 -ac 1 -ar 16000 -b:a 8.85k -strict normal -acodec libvo_amrwbenc</params>
+      <extension>3gp</extension>
+      <category>App Builder</category>
+   </AppBuilder3gp8.85k16000>
+   <AppBuilder3gp6.60k16000>
+      <label>3gp AMR-wb 16000Hz 6.60k mono Video H.263 128x96 </label>
+      <params>-r 5 -b:v 12k -vf scale=128:96 -vcodec h263 -ac 1 -ar 16000 -b:a 6.60k -strict normal -acodec libvo_amrwbenc</params>
+      <extension>3gp</extension>
+      <category>App Builder</category>
+   </AppBuilder3gp6.60k16000>
+   <AppBuilder3gp8.85k15850>
+      <label>3gp AMR-wb 15850Hz  unofficial sample rate 8.85k mono Video H.263 128x96 </label>
+      <params>-r 5 -b:v 12k -vf scale=128:96 -vcodec h263 -ac 1 -ar 15850 -b:a 8.85k -strict unofficial -acodec libvo_amrwbenc</params>
+      <extension>3gp</extension>
+      <category>App Builder</category>
+   </AppBuilder3gp8.85k15850>
+   <AppBuilder3gp8.85k14250>
+      <label>3gp AMR-wb 14250Hz  unofficial sample rate 8.85k mono Video H.263 128x96 </label>
+      <params>-r 5 -b:v 12k -vf scale=128:96 -vcodec h263 -ac 1 -ar 14250 -b:a 8.85k -strict unofficial -acodec libvo_amrwbenc</params>
+      <extension>3gp</extension>
+      <category>App Builder</category>
+   </AppBuilder3gp8.85k14250>
+   <AppBuilder3gp8.85k12650>
+      <label>3gp AMR-wb 12650Hz  unofficial sample rate 8.85k mono Video H.263 128x96 </label>
+      <params>-r 5 -b:v 12k -vf scale=128:96 -vcodec h263 -ac 1 -ar 12650 -b:a 8.85k -strict unofficial -acodec libvo_amrwbenc</params>
+      <extension>3gp</extension>
+      <category>App Builder</category>
+   </AppBuilder3gp8.85k12650>
+   <AppBuilder3gp8.85k8850>
+      <label>3gp AMR-wb 8850Hz  unofficial sample rate 8.85k mono Video H.263 128x96 </label>
+      <params>-r 5 -b:v 12k -vf scale=128:96 -vcodec h263 -ac 1 -ar 8850 -b:a 8.85k -strict unofficial -acodec libvo_amrwbenc</params>
+      <extension>3gp</extension>
+      <category>App Builder</category>
+   </AppBuilder3gp8.85k8850>
+   <AppBuilder3gp7.95k8000>
+      <label>3gp AMR-nb 8000Hz 7.95k mono Video H.263 128x96 </label>
+      <params>-r 5 -b:v 12k -vf scale=128:96 -vcodec h263 -ac 1 -ar 8000 -b:a 7.95k -strict normal -acodec libopencore-amrnb</params>
+      <extension>3gp</extension>
+      <category>App Builder</category>
+   </AppBuilder3gp7.95k8000>
+   <AppBuilder3gp7.40k8000>
+      <label>3gp AMR-nb 8000Hz 7.40k mono Video H.263 128x96 </label>
+      <params>-r 5 -b:v 12k -vf scale=128:96 -vcodec h263 -ac 1 -ar 8000 -b:a 7.40k -strict normal -acodec libopencore-amrnb</params>
+      <extension>3gp</extension>
+      <category>App Builder</category>
+   </AppBuilder3gp7.40k8000>
+   <AppBuilder3gp6.70k8000>
+      <label>3gp AMR-nb 8000Hz 6.70k mono Video H.263 128x96 </label>
+      <params>-r 5 -b:v 12k -vf scale=128:96 -vcodec h263 -ac 1 -ar 8000 -b:a 6.70k -strict normal -acodec libopencore-amrnb</params>
+      <extension>3gp</extension>
+      <category>App Builder</category>
+   </AppBuilder3gp6.70k8000>
+   <AppBuilder3gp5.90k8000>
+      <label>3gp AMR-nb 8000Hz 5.90k mono Video H.263 128x96 </label>
+      <params>-r 5 -b:v 12k -vf scale=128:96 -vcodec h263 -ac 1 -ar 8000 -b:a 5.90k -strict normal -acodec libopencore-amrnb</params>
+      <extension>3gp</extension>
+      <category>App Builder</category>
+   </AppBuilder3gp5.90k8000>
+   <AppBuilder3gp5.15k8000>
+      <label>3gp AMR-nb 8000Hz 5.15k mono Video H.263 128x96 </label>
+      <params>-r 5 -b:v 12k -vf scale=128:96 -vcodec h263 -ac 1 -ar 8000 -b:a 5.15k -strict normal -acodec libopencore-amrnb</params>
+      <extension>3gp</extension>
+      <category>App Builder</category>
+   </AppBuilder3gp5.15k8000>
+   <AppBuilder3gp4.75k8000>
+      <label>3gp AMR-nb 8000Hz 4.75k mono Video H.263 128x96 </label>
+      <params>-r 5 -b:v 12k -vf scale=128:96 -vcodec h263 -ac 1 -ar 8000 -b:a 4.75k -strict normal -acodec libopencore-amrnb</params>
+      <extension>3gp</extension>
+      <category>App Builder</category>
+   </AppBuilder3gp4.75k8000>
+   <AppBuilder3gp5.90k7400>
+      <label>3gp AMR-nb 7400Hz  unofficial sample rate 5.90k mono Video H.263 128x96 </label>
+      <params>-r 5 -b:v 12k -vf scale=128:96 -vcodec h263 -ac 1 -ar 7400 -b:a 5.90k -strict unofficial -acodec libopencore-amrnb</params>
+      <extension>3gp</extension>
+      <category>App Builder</category>
+   </AppBuilder3gp5.90k7400>
+   <AppBuilder3gp5.90k6700>
+      <label>3gp AMR-nb 6700Hz  unofficial sample rate 5.90k mono Video H.263 128x96 </label>
+      <params>-r 5 -b:v 12k -vf scale=128:96 -vcodec h263 -ac 1 -ar 6700 -b:a 5.90k -strict unofficial -acodec libopencore-amrnb</params>
+      <extension>3gp</extension>
+      <category>App Builder</category>
+   </AppBuilder3gp5.90k6700>
+   <AppBuilder3gp5.90k5900>
+      <label>3gp AMR-nb 5900Hz  unofficial sample rate 5.90k mono Video H.263 128x96 </label>
+      <params>-r 5 -b:v 12k -vf scale=128:96 -vcodec h263 -ac 1 -ar 5900 -b:a 5.90k -strict unofficial -acodec libopencore-amrnb</params>
+      <extension>3gp</extension>
+      <category>App Builder</category>
+   </AppBuilder3gp5.90k5900>
+   <AppBuilder3gp5.90k4750>
+      <label>3gp AMR-nb 4750Hz  unofficial sample rate 5.90k mono Video H.263 128x96 </label>
+      <params>-r 5 -b:v 12k -vf scale=128:96 -vcodec h263 -ac 1 -ar 4750 -b:a 5.90k -strict unofficial -acodec libopencore-amrnb</params>
+      <extension>3gp</extension>
+      <category>App Builder</category>
+   </AppBuilder3gp5.90k4750>
+   <AppBuildermp332k22050>
+      <label>MP3 22050Hz 32k mono Video H.263 128x96 </label>
+      <params> -ac 1 -ar 22050 -b:a 32k -strict normal -acodec libmp3lame</params>
+      <extension>mp3</extension>
+      <category>App Builder</category>
+   </AppBuildermp332k22050>
+   <AppBuildermp316k22050>
+      <label>MP3 22050Hz 16k mono Video H.263 128x96 </label>
+      <params> -ac 1 -ar 22050 -b:a 16k -strict normal -acodec libmp3lame</params>
+      <extension>mp3</extension>
+      <category>App Builder</category>
+   </AppBuildermp316k22050>
+   <AppBuildermp332k11025>
+      <label>MP3 11025Hz 32k mono Video H.263 128x96 </label>
+      <params> -ac 1 -ar 11025 -b:a 32k -strict normal -acodec libmp3lame</params>
+      <extension>mp3</extension>
+      <category>App Builder</category>
+   </AppBuildermp332k11025>
+   <AppBuildermp316k11025>
+      <label>MP3 11025Hz 16k mono Video H.263 128x96 </label>
+      <params> -ac 1 -ar 11025 -b:a 16k -strict normal -acodec libmp3lame</params>
+      <extension>mp3</extension>
+      <category>App Builder</category>
+   </AppBuildermp316k11025>
+</presets>
