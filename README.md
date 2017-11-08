@@ -1,10 +1,14 @@
-# audio-to-3gp
-Simple interface for FFMPEG converter
+# 1. A simple option: preset.xml file for use with WinFF
+
+This preset file has a range of 3gp and mp3 qualities to provide smaller file sizes for download or incluting in the app. Just download the presets.xml file and replace the file with that name in your WinFF setup. If you do this don't read the rest except the example and [Transformation Information](transform-info.md) for more information.
+
+# 2. A more configurable option: audio-to-3gp Desktop app
+
+Simple interface for FFMPEG command line converter.
 
 This provides a minimal installer and GUI to create 3GP files from any audio source. 
 I has a simple parameter file named project.txt that is visible and editable via 
 the GUI. The GUI opens the file in Notepad.
-
 
 
 ## Aim of project
@@ -50,7 +54,7 @@ an app at under 100MB then depending on the length of you audio one of these
 should work for you. The audio quality is not as good as he original but 
 understanderable.
 
-The above wav file if converted to 128kbps 44100Hz 16bit mp3 would be 5326KB or 
+The above wav file if converted to 128kbps 44100Hz 16bit mp3 would be 5326KB. 
 
 Whereas the wave file converted to the 360KB 3gp is only 0.6% the size of the 
 original stereo wav file.
