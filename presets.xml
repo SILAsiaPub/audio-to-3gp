@@ -103,25 +103,25 @@
       <category>App Builder</category>
    </AppBuilder3gp5.90k4750>
    <AppBuildermp332k22050>
-      <label>MP3 22050Hz 32k mono Video H.263 128x96 </label>
+      <label>MP3 22050Hz 32k mono</label>
       <params> -ac 1 -ar 22050 -b:a 32k -strict normal -acodec libmp3lame</params>
       <extension>mp3</extension>
       <category>App Builder</category>
    </AppBuildermp332k22050>
    <AppBuildermp316k22050>
-      <label>MP3 22050Hz 16k mono Video H.263 128x96 </label>
+      <label>MP3 22050Hz 16k mono</label>
       <params> -ac 1 -ar 22050 -b:a 16k -strict normal -acodec libmp3lame</params>
       <extension>mp3</extension>
       <category>App Builder</category>
    </AppBuildermp316k22050>
    <AppBuildermp332k11025>
-      <label>MP3 11025Hz 32k mono Video H.263 128x96 </label>
+      <label>MP3 11025Hz 32k mono</label>
       <params> -ac 1 -ar 11025 -b:a 32k -strict normal -acodec libmp3lame</params>
       <extension>mp3</extension>
       <category>App Builder</category>
    </AppBuildermp332k11025>
    <AppBuildermp316k11025>
-      <label>MP3 11025Hz 16k mono Video H.263 128x96 </label>
+      <label>MP3 11025Hz 16k mono</label>
       <params> -ac 1 -ar 11025 -b:a 16k -strict normal -acodec libmp3lame</params>
       <extension>mp3</extension>
       <category>App Builder</category>
